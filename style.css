@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+@font-face {
+    font-family: 'Telegraf';
+    src: url('/assets/Telegraf-Bold.woff');
+}
+
+
+
+#message {
+    font-family: Telegraf;
+    font-size: 220px;
+    z-index: 1;
+    user-select: none;
+}
+
+.module-bar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 10px;
+    padding-right: 10px;
+    overflow-x: scroll;
+}
+
+#music-player {
+    width: 300px;
+    max-height: 380px;
+    border-radius: 12px;
+}
+
+#partyhat {
+    width: 300px;
+    height: 380px;
+    border-radius: 12px;
+}
+
+#partyhat > canvas {
+    cursor: crosshair;
+    border-radius: 12px;
+}
+
+iframe {
+    border-radius: 12px;
+}
+
+#photoframe {
+    display: flex;
+    flex-direction: row;
+    min-width: 285px;
+    width: 285px;
+    height: 380px;
+    border-radius: 12px;
+
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+#photoframe > img {
+    width: 300px;
+    height: 380px;
+    object-fit: cover;
+    scroll-snap-align: center;
+}
+
+#birthday-note {
+    min-width: 700px;
+    width: 700px;
+    height: 380px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+#container {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: -1;
+}
